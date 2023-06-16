@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'saveuser' %}">
+    {% csrf_token %}
+  <h2>Add Users</h2>
+  <input type="text" placeholder="Enter Name" name="u_name"><br><br>
+  <input type="email" placeholder="Enter Email" name="u_email"><br><br>
+  <input type="number" placeholder="Enter Age" name="u_age"><br><br>
+  <input type="number" placeholder="Enter Mobile number" name="number"><br><br>
+  <input type="number" placeholder="Enter Price" name="u_price"><br><br>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
